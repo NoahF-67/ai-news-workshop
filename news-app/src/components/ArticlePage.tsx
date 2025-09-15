@@ -140,7 +140,7 @@ export function ArticlePage({ article }: ArticlePageProps) {
       </div>
 
       {/* Chatbot */}
-      <Chatbot articleId={article.id} articleTitle={article.title} />
+      <Chatbot articleId={article.id || article._id || ''} articleTitle={article.title} />
     </div>
   );
 }

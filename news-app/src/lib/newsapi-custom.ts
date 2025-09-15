@@ -47,7 +47,13 @@ class NewsAPIClient {
     pageSize?: number;
     page?: number;
   } = {}): Promise<NewsAPIResponse> {
-    return this.makeRequest('/top-headlines', params);
+    const stringParams: Record<string, string> = {};
+    Object.entries(params).forEach(([key, value]) => {
+      if (value !== undefined) {
+        stringParams[key] = String(value);
+      }
+    });
+    return this.makeRequest('/top-headlines', stringParams);
   }
 
   async getEverything(params: {
@@ -63,7 +69,13 @@ class NewsAPIClient {
     pageSize?: number;
     page?: number;
   } = {}): Promise<NewsAPIResponse> {
-    return this.makeRequest('/everything', params);
+    const stringParams: Record<string, string> = {};
+    Object.entries(params).forEach(([key, value]) => {
+      if (value !== undefined) {
+        stringParams[key] = String(value);
+      }
+    });
+    return this.makeRequest('/everything', stringParams);
   }
 
   async getSources(params: {
