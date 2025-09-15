@@ -1,8 +1,0 @@
-{
-  "env": {
-    "MONGODB_URI": "mongodb+srv://dal800028_db_user:D8NgsrXhAj2EPIja@67.tkcbttd.mongodb.net/news-app?retryWrites=true&w=majority&appName=67",
-    "NEWS_API_KEY": "3fd164b63bf84c958ce5bde99a5dc2b9",
-    "GOOGLE_API_KEY": "AIzaSyDi7Fet7Quu0KDNbiymg_qsEgM2ckjvvK0",
-    "NEXT_PUBLIC_APP_URL": "https://ai-news-workshop-z9jo.vercel.app"
-  }
-}
